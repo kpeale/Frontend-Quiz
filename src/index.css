@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap');;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #f4f6fa;
+  font-weight: 400;
+  
+}
+
+.section__homepage{
+  margin: 10rem 20rem;
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  align-content: center;
+  width: 1160px;
+}
+
+.section__homepage-item1
+{
+  width: 35%;
+}
+
+.section__homepage-item2 {
+  width: 65%;
+}
+
+
+.heading__primary{
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.heading__secondary {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.paragraph__primary{
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-style: italic;
+  padding-top: 2rem;
+}
+
+.btn-homepage__box{
+  background-color: white;
+  width: 35.25rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+  border: 0;
+  display: block;
+  cursor: pointer;
+}
+
+.image-homepage,
+.image-homepage-css,
+.image-homepage--js,
+.image-homepage-acc {
+  width: 3.5rem;
+  display: inline;
+  
+ }
+
+ .image-homepage {
+background-color: #FFF1E9;
+ }
+ .image-homepage--css {
+  background-color: #E0FDEF;
+ }
+ .image-homepage--js{
+  background-color: #EBF0FF;
+ }
+ .image-homepage--acc{
+  background-color: #F6E7FF;
+ }
+
+ .x{
+  padding: 1.25rem;
+ }
+
+
+
+.childrenBox {
+  /* padding: 1rem ; */
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.paragraph__secondary{
+  font-weight: 500;
+  font-size: 1.75rem;
+  padding-top: 2rem;
+}
+
+
+/* QUESTIONS PAGE */
+.section__Question{
+  margin:  3rem 10rem;
+  width: 1160px;
+}
+
+.section__question-heading{
+  font-size: 1.75rem;
+  font-weight: 500;
+  
+}
+
+.section__Question-item{
+  display: flex;
+  flex-direction: row;
+  width:40%;
+}
+
+.section__Question-parent{
+  display: flex;
+  flex-direction: row;
+}
+
+.section__Question-item2{
+  margin-left: 1rem ;
+  margin-top: 3rem;
+}
+
+.section__Question-heading-primary{
+  font-size: 1.25rem;
+  font-style: italic;
+  color: grey;
+}
+
+.section__question-heading-tertiary{
+  font-size: 2.25rem;
+  font-weight: 400;
+  max-width: 29.06rem;
+  margin-top: 1.2rem;
+}
+
+.section__Question-item3{
+  margin-top: 3rem;
+  width: 60%;   
+  margin-left: 15rem;  
+}
+
+.options-container:hover .option-letter {
+  background-color: #F6E7FF;
+  color: palevioletred ;   
+}
+
+.options-container:active .option-letter {
+  background-color: purple;
+  color: white;
+}
+
+ .btnn-bx .btn-options:active {
+  border: 3px solid purple; /* Add border color and style */
+  outline: none; /* Remove default outline */
+}
+
+.btn-bx {
+  gap:10rem;
+}
+
+.btn-options{
+margin-bottom: 1rem;
+ background-color: white;
+  width: 38rem;
+  border-radius: 20px;
+ outline: none;
+  border: 0;
+  display: block;
+  cursor: pointer;
+  padding: 2rem 1rem;
+  font-size:1.75rem;
+  font-weight:500;
+  text-align: center;  
+}
+
+.option-letter {
+  font-weight: 300;
+  font-size: 1.75rem;
+  background-color: #F4F6FA; /* Style for the letters */
+    /* margin-right: 2rem; */
+   padding:  10px;
+   border-radius: 5px;
+   cursor: pointer;   
+}
+
+
+.letters-bx{
+  margin-right: -4.5rem;
+  z-index: 1000;
+  padding-top: 2rem;
+   
+}
+
+.btnn-bx{
+  z-index: 500;
+ 
+}
+
+
+.options-container {
+ display: flex;
+  flex-direction: row;
+}
+
+.section__question-btnbx{
+  margin-top: 2rem
+}
+
+.btn-submit{
+  
+ background-color: #A729F5;
+ color: white;
+  width: 37.5rem;
+  border-radius: 10px;
+ outline: none;
+  border: 0;
+  display: block;
+  cursor: pointer;
+  padding: 2rem 1rem;
+  font-size:1.75rem;
+  font-weight:500;  
+}
+
+/* Add these styles to your CSS file */
+
+/* Style for correct option */
+.btn-options.correct {
+  background-color: #8bc34a; /* Green */
+  color: #fff; /* White text */
+}
+
+/* Style for incorrect option */
+.btn-options.wrong {
+  background-color: #f44336; /* Red */
+  color: #fff; /* White text */
+}
+
+/* Style for default option */
+.btn-options {
+  background-color: #fff; /* White */
+  color: #000; /* Black text */
+}
+
+/* Disable pointer events for selected options */
+.btn-options:disabled {
+  pointer-events: none;
+}
+
+/* Style for disabled button */
+.btn-options:disabled {
+  opacity: 0.5; /* Reduced opacity */
+  cursor: not-allowed; /* Cursor indicates not clickable */
+}
+
+/* Add hover effect for options */
+.btn-options:not(:disabled):hover {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+.section-quiz-finished{
+  width: 37rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section__Quiz-completed{
+  color: #1E1E1E;
+  font-size: 4rem;
+}
+
+.section__quiz-tertiary{
+  font-size: 4rem;
+  color: #313E51;
+  font-weight: 500;
+}
+
+.section__quiz-points{
+  color: #313E51;
+  font-size: 9rem;
+}
+
+.quiz-length{
+  font-size: 1.75rem;
+  color: #626c7f;
+  padding-bottom: 2rem;
+}
+
+
+
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
+*/
